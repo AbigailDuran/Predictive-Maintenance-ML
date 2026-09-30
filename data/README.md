@@ -21,9 +21,19 @@ Each row represents a machine operating condition at a given point in time.
 The main input features used in this project include:
 
 - **Type** — Product quality level:
-  - `L` = Low
-  - `M` = Medium
-  - `H` = High
+  - `L` = Low quality
+  - `M` = Medium quality
+  - `H` = High quality
+
+  The `Type` feature represents the quality category of the product being processed by the machine. The dataset is made up of approximately 50% Low-quality products, 30% Medium-quality products, and 20% High-quality products.
+
+  Product type also affects tool wear in the dataset. Each product category contributes a different amount of wear to the machine tool:
+
+  - `L` products contribute **2 minutes** of tool wear
+  - `M` products contribute **3 minutes** of tool wear
+  - `H` products contribute **5 minutes** of tool wear
+
+  Because product type is related to how quickly the tool wears, it can provide useful information to the machine learning model when predicting machine failure.
 - **Air temperature [K]** — Air temperature in Kelvin
 - **Process temperature [K]** — Process temperature in Kelvin
 - **Rotational speed [rpm]** — Machine rotational speed
