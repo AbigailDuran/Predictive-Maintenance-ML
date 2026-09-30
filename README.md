@@ -76,26 +76,3 @@ Evaluation metrics may include:
 - Confusion Matrix
 
 The **F1 score** is used as an important comparison metric because it balances precision and recall.
-
-## Repository Structure
-
-```text
-predictive-maintenance-ml/
-│
-├── README.md
-├── .gitignore
-├── requirements.txt
-│
-├── data/
-│   └── README.md
-│
-├── notebooks/
-│
-├── src/
-│
-├── results/
-│
-├── docs/
-│   └── references.md
-│
-└── presentation/
